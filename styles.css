@@ -1,0 +1,83 @@
+:root {
+    /* Primary colors */
+    --color-white: #FFFFFF;
+    --color-lightcream:#fffefa;
+    /* --color-sidebar-blue: #0078d4; "The over-used blue" */
+    --color-sidebar-blue: #0067b5;
+    --color-accents-orange: #F59E0B;
+    --color-text-darkblue: #1E3A8A;
+
+    /* Supporting colors */
+    --color-lightblue: #bedaff;
+    --color-bg-cream: #FDF6E3;
+    --color-green: #10B981;
+}
+
+body {
+    background-color: var(--color-bg-cream);
+    color: var(--color-text-darkblue);
+}
+div.main-wrapper {
+    display: grid;
+    grid-template-columns: minmax(250px, 300px) minmax(360px, 100%);
+    grid-template-rows: minmax(100vh, 100%);
+    gap: 10px;
+}
+
+/* Sidebar styles */
+.sidebar-wrapper {
+    border-right: 8px solid var(--color-accents-orange);
+    background-color: var(--color-sidebar-blue);
+    color: var(--color-white);
+    padding-left: 10px;
+    padding-top: 20px;
+    font-size: 1.2rem;
+}
+.sidebar-header button.sidebar-action {
+    font-weight: 700;
+    font-size: 1.6rem;
+    background: none;
+    letter-spacing: 2px;
+}
+button svg {
+    pointer-events: none;
+}
+.sidebar-header {
+    display: flex;
+}
+ul.nav-list, ul.nav-list {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0; 
+}
+.sidebar-nav {
+    display: none;
+}
+.sidebar-nav.visible {
+    display: flex;
+    animation: fadeIn 300ms ease-in forwards; /* The animation is triggered when card-container is created. */
+}
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+button.sidebar-action {
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    padding: 0 6px 4px 6px;
+    color: inherit;
+    letter-spacing: 1px;
+}
+button.sidebar-action:hover {
+    translate: 2px;
+    background-color: var(--color-accents-orange);
+    border-radius: 8px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0.5; }
+    to { opacity: 1; }
+}

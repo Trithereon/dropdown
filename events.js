@@ -15,7 +15,7 @@ export default class EventHandler {
         // If the clicked element has no data-action, then ignore the click.
         else return;
     }
-    static handleHamburger(e) {
+    static handleHamburger() {
         const sidebar = document.querySelector('nav.sidebar-nav');
         if (sidebar.className.includes('visible')){
             sidebar.classList.remove('visible');

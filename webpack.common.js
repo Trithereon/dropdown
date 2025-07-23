@@ -7,7 +7,11 @@ module.exports = {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
-    library: "Dropdown",
+    library: {
+      name: "Dropdown",
+      type: "umd",
+      export: "default", // Explicitly export default
+    },
     libraryTarget: "umd",
     globalObject: "this",
   },

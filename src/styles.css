@@ -1,0 +1,62 @@
+:root {
+  /* Primary colors */
+  --color-white: #ffffff;
+  --color-lightcream: #fffefa;
+  /* --color-sidebar-blue: #0078d4; "The over-used blue" */
+  --color-sidebar-blue: #0067b5;
+  --color-accents-orange: #f59e0b;
+  --color-text-darkblue: #1e3a8a;
+
+  /* Supporting colors */
+  --color-lightblue: #bedaff;
+  --color-bg-cream: #fdf6e3;
+  --color-green: #10b981;
+}
+body {
+  background-color: var(--color-bg-cream);
+  color: var(--color-lightcream);
+}
+button.hamburger {
+  width: 3rem;
+}
+button svg {
+  pointer-events: none;
+}
+ul.dropdown-list {
+  display: none;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  background-color: var(--color-sidebar-blue);
+  width: fit-content;
+  border-radius: 6px;
+  padding: 8px 8px;
+}
+ul.dropdown-list.visible {
+  display: flex;
+  animation: fadeIn 300ms ease-in forwards; /* The animation is triggered when card-container is created. */
+  flex-direction: column;
+  gap: 6px;
+}
+button.dropdown-button {
+  background: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 4px 6px;
+  color: inherit;
+  letter-spacing: 1px;
+}
+button.dropdown-button:hover {
+  translate: 2px;
+  background-color: var(--color-accents-orange);
+  border-radius: 8px;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

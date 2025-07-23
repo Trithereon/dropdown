@@ -1,7 +1,7 @@
 {
   "name": "dropdown",
   "version": "1.0.0",
-  "description": "Dropdown module",
+  "description": "Dropdown component",
   "homepage": "https://github.com/Trithereon/dropdown#readme",
   "bugs": {
     "url": "https://github.com/Trithereon/dropdown/issues"
@@ -10,9 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/Trithereon/dropdown.git"
   },
-  "license": "ISC",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "author": "Trithereon",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "src/index.js",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "predeploy": "npm run build",
@@ -34,5 +38,8 @@
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.2",
     "webpack-merge": "^6.0.1"
+  },
+  "peerDependencies": {
+    "webpack": "^5.0.0"
   }
 }

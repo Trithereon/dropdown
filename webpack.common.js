@@ -7,15 +7,18 @@ module.exports = {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
+    library: "Dropdown",
+    libraryTarget: "umd",
+    globalObject: "this",
   },
   devServer: {
     hot: true,
     liveReload: true,
-    watchFiles: ["./src/template.html"],
+    watchFiles: ["./src/index.html"],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/template.html",
+      template: "./src/index.html",
     }),
   ],
   module: {

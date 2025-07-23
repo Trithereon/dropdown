@@ -5,3 +5,5 @@ import "./modern-normalize.css";
 document.querySelectorAll(".dropdown").forEach((dropdownContainer) => {
   new Dropdown(dropdownContainer);
 });
+
+export default Dropdown;

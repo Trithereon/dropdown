@@ -12,11 +12,18 @@
   },
   "license": "MIT",
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "author": "Trithereon",
   "main": "dist/index.js",
   "module": "src/index.js",
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "require": "./dist/index.js"
+    }
+  },
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "predeploy": "npm run build",

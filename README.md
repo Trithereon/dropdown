@@ -1,20 +1,46 @@
 Dropdown component
 
-How to use
+## Installation
 
-Add this to your index.js:
+1. Run the following command in terminal.
+
+```bash
+npm install @trithereon/dropdown
+```
+
+2. One of the following must be added to your index.js
+
+For CommonJS (Node.js/older bundlers):
 
 ```javascript
-import Dropdown from "@trithereon/dropdown/dist/main.js";
+const Dropdown = require("@trithereon/dropdown");
+// Uses dist/index.js
+```
 
+For ES Modules (modern bundlers):
+
+```javascript
+import Dropdown from "@trithereon/dropdown";
+// Uses src/index.js via the "module" field
+```
+
+To Access Source Files Directly:
+
+```javascript
+import DropdownComponent from "@trithereon/dropdown/src/index";
+```
+
+3. The following snippet must also be added to your index.js.
+
+```javascript
 document.querySelectorAll(".dropdown").forEach((dropdownContainer) => {
   new Dropdown(dropdownContainer);
 });
 ```
 
-This imports the component and instantiates a Dropdown for each HTML element with class "dropdown".
+Steps 2 and 3 import the component and instantiate a Dropdown for each HTML element with class "dropdown".
 
-The structure of the dropdown must follow this template:
+4. The structure of the dropdown must follow this template:
 
 ```html
 <div class="dropdown">
@@ -42,4 +68,4 @@ The structure of the dropdown must follow this template:
 </div>
 ```
 
-Note: The svg is a hamburger menu icon, but it can be replaced by any image or text instead.
+Note: The svg above is a hamburger menu icon, but it can be replaced by any image or text instead. You can also edit the path element's stroke attributes to your liking.

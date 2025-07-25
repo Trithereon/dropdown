@@ -2,13 +2,13 @@ Dropdown component
 
 ## Installation
 
-1. Run the following command in terminal.
+# 1. Run the following command in terminal.
 
 ```bash
 npm install @trithereon/dropdown
 ```
 
-2. One of the following must be added to your index.js
+# 2. One of the following must be added to your index.js
 
 For CommonJS (Node.js/older bundlers):
 
@@ -30,7 +30,7 @@ To Access Source Files Directly:
 import DropdownComponent from "@trithereon/dropdown/src/index";
 ```
 
-3. The following snippet must also be added to your index.js.
+# 3. The following snippet must also be added to your index.js.
 
 ```javascript
 document.querySelectorAll(".dropdown").forEach((dropdownContainer) => {
@@ -40,7 +40,7 @@ document.querySelectorAll(".dropdown").forEach((dropdownContainer) => {
 
 Steps 2 and 3 import the component and instantiate a Dropdown for each HTML element with class "dropdown".
 
-4. The structure of the dropdown must follow this template:
+# 4. The structure of the dropdown must follow this template:
 
 ```html
 <div class="dropdown">

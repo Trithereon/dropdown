@@ -70,4 +70,10 @@ Steps 2 and 3 import the component and instantiate a Dropdown for each HTML elem
 
 Note: The svg above is a hamburger menu icon, but it can be replaced by any image or text instead. You can also edit the path element's stroke attributes to your liking.
 
-To test the module without installing, visit https://trithereon.github.io/dropdown/ and run the command `new Dropdown(document.querySelector('.dropdown'))` in console, to activate the hamburger menu button.
+To test the module without installing, visit https://trithereon.github.io/dropdown/ and run the command
+
+```javascript
+new Dropdown(document.querySelector(".dropdown"));
+```
+
+in console, to activate the hamburger menu button.

@@ -12,10 +12,6 @@
   --color-bg-cream: #fdf6e3;
   --color-green: #10b981;
 }
-body {
-  background-color: var(--color-bg-cream);
-  color: var(--color-lightcream);
-}
 button.hamburger {
   width: 3rem;
 }
@@ -23,6 +19,7 @@ button svg {
   pointer-events: none;
 }
 ul.dropdown-list {
+  color: var(--color-lightcream);
   display: none;
   list-style: none;
   margin-left: 0;

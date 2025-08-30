@@ -5,7 +5,7 @@
 ## 1. Run the following command in terminal.
 
 ```bash
-npm install @trithereon/dropdown
+npm install --save-dev @trithereon/dropdown
 ```
 
 ## 2. One of the following must be added to your index.js
